@@ -34,3 +34,4 @@ from-master/0001-gpg-Turn-no-mdc-warn-into-a-NOP.patch
 from-master/0002-gpg-Hard-fail-on-a-missing-MDC-even-for-legacy-algor.patch
 from-master/0003-gpg-Remove-MDC-options.patch
 from-master/0004-gpg-Print-a-hint-on-how-to-decrypt-a-non-mdc-message.patch
+CVE-2018-1000858.patch

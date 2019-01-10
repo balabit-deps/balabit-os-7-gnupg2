@@ -1,3 +1,14 @@
+gnupg2 (2.2.4-1ubuntu1.2) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: CSRF in dirmngr
+    - debian/patches/CVE-2018-1000858.patch: don't follow a redirect in
+      dirmngr/Makefile.am, dirmngr/http.c, dirmngr/http.h,
+      dirmngr/ks-engine-hkp.c, dirmngr/ks-engine-http.c,
+      dirmngr/t-http-basic.c, dirmngr/t-http.c.
+    - CVE-2018-1000858
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 10 Jan 2019 08:07:03 -0500
+
 gnupg2 (2.2.4-1ubuntu1.1) bionic-security; urgency=medium
 
   * SECURITY UPDATE: missing sanitization of verbose output
