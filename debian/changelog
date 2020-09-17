@@ -1,3 +1,19 @@
+gnupg2 (2.2.4-1ubuntu1.3) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: signature collisions via insecure SHA-1 algorithm
+    - debian/patches/CVE-2019-14855-1.patch: reject certain SHA-1 based
+      signatures in g10/sig-check.c.
+    - debian/patches/CVE-2019-14855-2.patch: add new option
+      --allow-weak-key-signatures in doc/gpg.texi, g10/gpg.c, g10/main.h,
+      g10/misc.c, g10/options.h, g10/sig-check.c.
+    - debian/patches/CVE-2019-14855-3.patch: forbid the creation of SHA-1
+      third-party key signatures in g10/sign.c.
+    - debian/patches/CVE-2019-14855-4.patch: adjust tests for now invalid
+      SHA-1 key signatures in tests/openpgp/defs.scm.
+    - CVE-2019-14855
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 17 Sep 2020 09:57:57 -0400
+
 gnupg2 (2.2.4-1ubuntu1.2) bionic-security; urgency=medium
 
   * SECURITY UPDATE: CSRF in dirmngr
