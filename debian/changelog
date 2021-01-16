@@ -1,3 +1,13 @@
+gnupg2 (2.2.4-1ubuntu1.4) bionic; urgency=medium
+
+  * d/p/dirmngr-handle-EAFNOSUPPORT-at-connect_server.patch:
+    - Fix IPv6 connectivity for dirmngr (LP: #1910432)
+  * Fix autopkgtests (LP: #1825186)
+    - add d/t/simple-tests from devel branch
+    - remove broken gpgv-win32 test from d/t/control
+
+ -- Heitor Alves de Siqueira <halves@canonical.com>  Sat, 16 Jan 2021 14:47:37 +0000
+
 gnupg2 (2.2.4-1ubuntu1.3) bionic-security; urgency=medium
 
   * SECURITY UPDATE: signature collisions via insecure SHA-1 algorithm

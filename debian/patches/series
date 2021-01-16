@@ -39,3 +39,4 @@ CVE-2019-14855-1.patch
 CVE-2019-14855-2.patch
 CVE-2019-14855-3.patch
 CVE-2019-14855-4.patch
+dirmngr-handle-EAFNOSUPPORT-at-connect_server.patch
